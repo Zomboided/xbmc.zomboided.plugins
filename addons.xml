@@ -18,4 +18,22 @@
     <description lang="en">Establish a connection to a VPN provider and automatically switch VPN locations based on the add-on being used.</description>
   </extension>
 </addon>
+
+<addon id="service.zomboided.tools"
+       name="Zomboided Tools"
+       version="0.0.1"
+       provider-name="Zomboided">
+  <requires>
+    <import addon="xbmc.python" version="2.7.0"/>
+  </requires>
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Various Kodi tools</summary>
+    <description lang="en">Limit playlist times.</description>
+  </extension>
+</addon>
 </addons>
