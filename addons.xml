@@ -21,7 +21,7 @@
 
 <addon id="service.zomboided.tools"
        name="Zomboided Tools"
-       version="0.0.5"
+       version="0.0.6"
        provider-name="Zomboided">
   <requires>
     <import addon="xbmc.python" version="2.7.0"/>
@@ -33,7 +33,7 @@
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <summary lang="en">Various Kodi tools</summary>
-    <description lang="en">Limit playlist times.</description>
+    <description lang="en">Limit playback and play lists; trigger actions based on events and timers; sleep timer; clear caches; speed test LAN connections.</description>
   </extension>
 </addon>
 </addons>
