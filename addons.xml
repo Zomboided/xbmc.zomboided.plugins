@@ -2,7 +2,7 @@
 <addons>
 <addon id="service.vpn.manager"
        name="VPN Manager for OpenVPN"
-       version="6.2.2"
+       version="6.2.3"
        provider-name="Zomboided">
   <requires>
     <import addon="xbmc.python" version="2.7.0"/>
