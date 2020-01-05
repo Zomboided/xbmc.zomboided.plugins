@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+<addon id="plugin.video.kidstv"
+       name="Kids TV"
+       version="2.0.1"
+       provider-name="Zomboided">
+  <requires>
+    <import addon="xbmc.python" version="2.7.0"/>
+    <import addon="plugin.video.emby.movies" version="0.14" />
+    <import addon="plugin.video.emby.tvshows" version="0.14" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Kids TV</summary>
+    <description lang="en">Lazy baby sitting for technologically aware parents.</description>
+  </extension>
+</addon>
+
 <addon id="service.vpn.manager"
        name="VPN Manager for OpenVPN"
        version="6.3.1"
