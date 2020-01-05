@@ -7,4 +7,4 @@ REM Copy addon.xml for all of the plugins into the resepective plugin directorie
 
 
 REM Update repository data
-python %GITPATH%\xbmc.zomboided.plugins\gen_addons.py
+c:\Python27\python %GITPATH%\xbmc.zomboided.plugins\gen_addons.py
