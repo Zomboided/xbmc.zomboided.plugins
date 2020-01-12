@@ -40,7 +40,7 @@
 
 <addon id="service.zomboided.tools"
        name="Zomboided Tools"
-       version="0.6.0"
+       version="0.6.1"
        provider-name="Zomboided">
   <requires>
     <import addon="xbmc.python" version="2.7.0"/>
