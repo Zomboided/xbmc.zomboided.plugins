@@ -21,7 +21,7 @@
 
 <addon id="service.vpn.manager"
        name="VPN Manager for OpenVPN"
-       version="6.3.1"
+       version="6.3.3"
        provider-name="Zomboided">
   <requires>
     <import addon="xbmc.python" version="2.7.0"/>
@@ -40,7 +40,7 @@
 
 <addon id="service.zomboided.tools"
        name="Zomboided Tools"
-       version="0.6.1"
+       version="0.6.2"
        provider-name="Zomboided">
   <requires>
     <import addon="xbmc.python" version="2.7.0"/>
