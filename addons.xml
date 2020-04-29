@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.game.browser"
        name="Game Browser"
-       version="0.2.4"
+       version="0.2.5"
        provider-name="Zomboided">
   <requires>
     <import addon="xbmc.python" version="2.7.0"/>
