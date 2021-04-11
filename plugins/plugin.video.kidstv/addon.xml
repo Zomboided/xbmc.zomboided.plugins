@@ -17,3 +17,30 @@
     <description lang="en">Lazy baby sitting for technologically aware parents.</description>
   </extension>
 </addon>
+<addon id="plugin.video.kidstv"
+       name="Kids TV"
+       version="3.0.0"
+       provider-name="Zomboided">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="plugin.video.emby-next-gen" version="5.1" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Kids TV</summary>
+    <description lang="en">Lazy baby sitting for technologically aware parents.</description>
+    <license>GPL-2.0-or-later</license>
+    <forum></forum>
+    <source>https://github.com/Zomboided/plugin.video.kidstv</source>
+    <assets>
+        <icon>resources/icon.png</icon>
+        <fanart></fanart>
+        <banner></banner>
+        <clearlogo></clearlogo>
+        <screenshot></screenshot>
+    </assets>
+  </extension>
+</addon>
