@@ -94,7 +94,7 @@
 </addon>
 <addon id="service.vpn.manager"
        name="VPN Manager for OpenVPN"
-       version="7.0.0"
+       version="7.0.1"
        provider-name="Zomboided">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
