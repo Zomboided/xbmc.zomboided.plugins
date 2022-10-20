@@ -1,100 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.game.browser"
-       name="Game Browser"
-       version="0.3.1"
-       provider-name="Zomboided">
-  <requires>
-    <import addon="xbmc.python" version="2.7.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Game Browser</summary>
-    <description lang="en">Display all games on a single list and launch with a defined libretro core.</description>
-  </extension>
-</addon>
-
-<addon id="plugin.video.kidstv"
-       name="Kids TV"
-       version="2.0.2"
-       provider-name="Zomboided">
-  <requires>
-    <import addon="xbmc.python" version="2.7.0"/>
-    <import addon="plugin.video.emby.movies" version="0.14" />
-    <import addon="plugin.video.emby.tvshows" version="0.14" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Kids TV</summary>
-    <description lang="en">Lazy baby sitting for technologically aware parents.</description>
-  </extension>
-</addon>
-<addon id="plugin.video.kidstv"
-       name="Kids TV"
-       version="3.0.0"
-       provider-name="Zomboided">
-  <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="plugin.video.emby-next-gen" version="5.1" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Kids TV</summary>
-    <description lang="en">Lazy baby sitting for technologically aware parents.</description>
-    <license>GPL-2.0-or-later</license>
-    <forum></forum>
-    <source>https://github.com/Zomboided/plugin.video.kidstv</source>
-    <assets>
-        <icon>resources/icon.png</icon>
-        <fanart></fanart>
-        <banner></banner>
-        <clearlogo></clearlogo>
-        <screenshot></screenshot>
-    </assets>
-  </extension>
-</addon>
-
 <addon id="service.vpn.manager"
        name="VPN Manager for OpenVPN"
-       version="6.3.7"
-       provider-name="Zomboided">
-  <requires>
-    <import addon="xbmc.python" version="2.7.0"/>
-  </requires>
-  <extension point="xbmc.service" library="service.py" start="startup" />
-  <extension point="xbmc.python.module" library="libs" />
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <news></news>
-    <platform>all</platform>
-    <summary lang="en">Configure and manage VPN connections using openVPN</summary>
-    <description lang="en">Establish a connection to a VPN service and automatically switch VPN locations based on the add-on being used.</description>
-    <license>GPL-2.0-or-later</license>
-    <forum>https://forum.libreelec.tv/thread/5032-vpn-manager-for-openvpn/</forum>
-    <source>https://github.com/Zomboided/service.vpn.manager</source>
-    <assets>
-        <icon>resources/icon.png</icon>
-        <fanart></fanart>
-        <banner></banner>
-        <clearlogo></clearlogo>
-        <screenshot></screenshot>
-    </assets>
-  </extension>
-</addon>
-<addon id="service.vpn.manager"
-       name="VPN Manager for OpenVPN"
-       version="7.0.1"
+       version="7.0.2"
        provider-name="Zomboided">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -105,13 +13,13 @@
     <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news></news>
     <platform>all</platform>
     <summary lang="en">Configure and manage VPN connections using openVPN</summary>
     <description lang="en">Establish a connection to a VPN service and automatically switch VPN locations based on the add-on being used.</description>
     <license>GPL-2.0-or-later</license>
     <forum>https://forum.libreelec.tv/thread/5032-vpn-manager-for-openvpn/</forum>
     <source>https://github.com/Zomboided/service.vpn.manager</source>
+    <disclaimer lang="en">Provided as-is, with no warranty</disclaimer>
     <assets>
         <icon>resources/icon.png</icon>
         <fanart></fanart>
@@ -119,18 +27,27 @@
         <clearlogo></clearlogo>
         <screenshot></screenshot>
     </assets>
+    <news>
+        v7.0.2
+        - Updated XML
+        v7.0.1
+        - pidof fix to silence logging
+        v7.0.0
+        - Promoted Python 3 version
+    </news>
   </extension>
 </addon>
 
 <addon id="service.zomboided.tools"
        name="Zomboided Tools"
-       version="0.7.5"
+       version="0.8.0"
        provider-name="Zomboided">
   <requires>
-    <import addon="xbmc.python" version="2.7.0"/>
+    <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.pyserial" version="0.0.1"/>
   </requires>
   <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.python.module" library="libs"/>
   <extension point="xbmc.python.pluginsource" library="addon.py">
     <provides>executable</provides>
   </extension>
@@ -138,6 +55,21 @@
     <platform>all</platform>
     <summary lang="en">Various Kodi tools</summary>
     <description lang="en">Limit playback and play lists; trigger actions based on events and timers; sleep timer; clear caches; speed test LAN connections.</description>
+    <license>GPL-2.0-or-later</license>
+    <forum></forum>
+    <source>https://github.com/Zomboided/service.zomboided.tools</source>
+    <disclaimer lang="en">Provided as-is, with no warranty</disclaimer>
+    <assets>
+        <icon>resources/icon.png</icon>
+        <fanart></fanart>
+        <banner></banner>
+        <clearlogo></clearlogo>
+        <screenshot></screenshot>
+    </assets>
+    <news>
+        v0.8.0
+        - Kodi 19/Python 3 support
+    </news>
   </extension>
 </addon>
 </addons>
