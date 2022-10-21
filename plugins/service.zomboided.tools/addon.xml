@@ -18,14 +18,10 @@
     <summary lang="en">Various Kodi tools</summary>
     <description lang="en">Limit playback and play lists; trigger actions based on events and timers; sleep timer; speed test LAN connections.</description>
     <license>GPL-2.0-or-later</license>
-    <forum></forum>
     <source>https://github.com/Zomboided/service.zomboided.tools</source>
     <assets>
         <icon>resources/icon.png</icon>
         <fanart></fanart>
-        <banner></banner>
-        <clearlogo></clearlogo>
-        <screenshot></screenshot>
     </assets>
   </extension>
 </addon>
